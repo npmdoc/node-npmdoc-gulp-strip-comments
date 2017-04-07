@@ -1,0 +1,156 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/RnbWd/gulp-strip-comments">gulp-strip-comments (v2.4.5)</a>
+</h1>
+<h4>Strip comments from code</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.gulp-strip-comments">module gulp-strip-comments</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-strip-comments.html">
+            function <span class="apidocSignatureSpan">gulp-strip-comments.</span>html
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-strip-comments.text">
+            function <span class="apidocSignatureSpan">gulp-strip-comments.</span>text
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.gulp-strip-comments" id="apidoc.module.gulp-strip-comments">module gulp-strip-comments</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-strip-comments.html" id="apidoc.element.gulp-strip-comments.html">
+        function <span class="apidocSignatureSpan">gulp-strip-comments.</span>html
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">html = function (options) {
+    return main(options, decomment.html);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Unlike the default **strip** method, it instructs the library that `text` is not a JSON, JavaScript or HTML, rather a plain text
+ that needs no parsing or validation, only to remove `//` and `/**/` comments from it according to the `options`.
+
+This method is good for any text file that uses syntax `//` and `/**/` for comments, such as: `.CSS`, `.CPP`, `.H`, etc.
+
+Please note that while the same rules apply for the text blocks (`''`, `""` and \`\`), you should not use this
+ method for JSON or JavaScript, as it can break your regular expressions.
+
+### [strip.<span class="apidocCodeKeywordSpan">html</span>(options)](https://github.com/vitaly-t/decomment#decommenthtmlhtml-options
+--string)
+
+Unlike the default **strip** method, it instructs the library not to parse
+or validate the input in any way, rather assume it to be HTML, and remove all
+`&lt;!-- comment --&gt;` entries from it according to the `options`.
+
+### [strip.getEOL()](https://github.com/vitaly-t/decomment#decommentgeteoltext--string)
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-strip-comments.text" id="apidoc.element.gulp-strip-comments.text">
+        function <span class="apidocSignatureSpan">gulp-strip-comments.</span>text
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">text = function (options) {
+    return main(options, decomment.text);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+##### options.trim â‡’ Boolean
+
+* `false (default)` - do not trim comments
+* `true` - remove empty lines that follow removed full-line comments
+
+NOTE: This option has no effect when option `space` is enabled.
+
+### [strip.<span class="apidocCodeKeywordSpan">text</span>(options)](https://github.com/vitaly-t/decomment#decommenttexttext-options
+--string)
+
+Unlike the default **strip** method, it instructs the library that `text` is not a JSON, JavaScript or HTML, rather a plain text
+ that needs no parsing or validation, only to remove `//` and `/**/` comments from it according to the `options`.
+
+This method is good for any text file that uses syntax `//` and `/**/` for comments, such as: `.CSS`, `.CPP`, `.H`, etc.
+
+Please note that while the same rules apply for the text blocks (`''`, `""` and \`\`), you should not use this
+ method for JSON or JavaScript, as it can break your regular expressions.
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
